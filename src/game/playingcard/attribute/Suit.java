@@ -1,4 +1,4 @@
-package game;
+package game.playingcard.attribute;
 
 public enum Suit {
 	HEART('♥'),

@@ -1,5 +1,7 @@
-package game;
-import game.card.Card;
+package game.playingcard;
+import game.core.Card;
+import game.playingcard.attribute.Rank;
+import game.playingcard.attribute.Suit;
 
 public class PlayingCard implements Card<PlayingCard> {
 	private Rank rank;
@@ -67,7 +69,7 @@ public class PlayingCard implements Card<PlayingCard> {
 	}
 	
 	public String formattedName() {
-		return String.format("%c %c", rank.getSymbol(), suit.getSymbol());
+		return String.format("|%c %c|", rank.getSymbol(), suit.getSymbol());
 	}
 	
 	@Override

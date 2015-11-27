@@ -1,4 +1,6 @@
-package game;
+package game.playingcard.attribute;
+
+import game.core.util.StringUtil;
 
 public enum Rank {
 	ACE('A', 13, 11),
@@ -47,5 +49,9 @@ public enum Rank {
 
 	public void setValue(int value) {
 		this.value = value;
+	}
+
+	public String formattedName() {
+		return StringUtil.toTitleCase(name());
 	}
 }
